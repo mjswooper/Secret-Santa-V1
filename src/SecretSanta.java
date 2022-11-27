@@ -6,7 +6,8 @@
  * 
  * 
  * Notes: 
- *  
+ *  Run this file. 
+ * 
  *  Rules: 
  *    - Each Adult gets 5 presents. They buy 6 presents. 
  *    - Children get 5 presents and buys none. 
@@ -35,10 +36,10 @@ public class SecretSanta {
 		allocatePresents(santaList, numGiving);
 		printCSV(santaList);
 	}
-
-	public static ArrayList<Person> csvReader(ArrayList<Person> santaList) {
+	public static ArrayList<Person> csvReader(ArrayList<Person> santaList) { 
+		String file = "src/SantaNames.csv"; //Reference file, which should be in the same folder as the SecretSanta.
 		try {
-			BufferedReader CSV = new BufferedReader(new FileReader("./SantaNames.csv"));
+			BufferedReader CSV = new BufferedReader(new FileReader(file));
 			System.out.println("***Successfully read csv file***");
 			String currentLine = ""; // where we will load in lines
 

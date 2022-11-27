@@ -4,6 +4,7 @@ import java.util.ArrayList;
 /////////////////////////
 /// Objects  ////////////
 /////////////////////////
+//NB: Don't run this file. 
 
 class Person {
 
